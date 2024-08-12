@@ -4,13 +4,13 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: action/checkout@v2
+    - uses: action/checkout@latest
     - run: python hello.py
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: action/checkout@v2
-    - uses: action/upload-artifact@v2
+    - uses: action/checkout@latest
+    - uses: action/upload-artifact@latest
       with:
         name: hello
         path: .
